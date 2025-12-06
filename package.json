@@ -1,14 +1,26 @@
 {
-  "name": "bsc_token",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "solidity-learning",
+  "version": "2.0.0",
+  "description": "A comprehensive Solidity learning repository with example contracts, tests, and deployment scripts",
+  "main": "hardhat.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network testnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network mainnet",
+    "verify": "hardhat verify",
+    "clean": "hardhat clean"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "hardhat",
+    "erc20",
+    "smart-contracts",
+    "learning"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "devDependencies": {
     "@nomiclabs/hardhat-etherscan": "^3.1.5",
     "hardhat": "^2.12.6"
